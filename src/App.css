@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header {
+  font-size: 16px;
+}
+
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  outline: 2px solid rgb(255, 217, 170);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.cell {
+  padding: 8px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.selected {
+  background-color: rgb(255, 105, 105) !important;
+}
+
+
+.avialable {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: rgb(85, 225, 65);
+}
+
+.black {
+  background-color: rgb(255, 217, 170);
+}
+
+.white {
+  background-color:rgb(255, 255, 255);
+}
+
+.green {
+  background-color: rgb(85, 225, 65);
+}
+
+.black-logo *{
+  fill: rgb(0, 0, 0);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 4px;
+}
+
+.white-logo *{
+  fill:rgb(255, 255, 255);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 6px;
+}
